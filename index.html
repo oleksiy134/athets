@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Athlete List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            max-width: 120px;
+            margin: 0 auto;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
+
+        /* Media queries for different screen sizes */
+        @media (max-width: 1250px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Example cards, replace "path/to/image" with your image URLs -->
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Mayweather.png" alt="Floyd Mayweather">
+            <h3>Floyd Mayweather</h3>
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Group 2.png" alt="Lionel Messi">
+            <h3>Lionel Messi</h3>
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Group 2 (1).png" alt="Cristiano Ronaldo">
+            <h3>Cristiano Ronaldo</h3>
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Group 2 (2).png" alt="Conor McGregor">
+            <h3>Conor McGregor</h3>    
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Mayweather2.png" alt="Neymar">
+            <h3>Neymar</h3>    
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Group 2 (3).png" alt="LeBron James">
+            <h3>LeBron James</h3>    
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Group 2 (4).png" alt="Roger Federer">
+            <h3>Roger Federer</h3>    
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Group 2 (5).png" alt="Stephen Curry">
+            <h3>Stephen Curry</h3>    
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Mayweather (1).png" alt="Matt Ryan">
+            <h3>Matt Ryan</h3>    
+        </div>
+        <div class="card">
+            <img src="C:\Users\oleks\OneDrive\Документи\GitHub\athets\Group 2 (6).png" alt="Matthew Stafford">
+            <h3>Matthew Staffords</h3>    
+        </div>
+</body>
+</html>
